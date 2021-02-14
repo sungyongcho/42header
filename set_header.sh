@@ -3,10 +3,10 @@
 
 # Set variables
 
-if [ ! -z "$USER" ]
+if [ ! -z "$USER_42" ]
 then
-    echo "USER=`/usr/bin/whoami`" >> ~/.zshrc
-    echo "export USER" >> ~/.zshrc
+    echo "USER_42=sucho" >> ~/.zshrc
+    echo "export USER_42" >> ~/.zshrc
 fi
 
 if [ ! -z "$GROUP" ]
@@ -15,10 +15,10 @@ then
     echo "export GROUP" >> ~/.zshrc
 fi
 
-if [ ! -z "$MAIL" ]
+if [ ! -z "$MAIL_42" ]
 then
-    echo "MAIL="$USER@student.42.fr"" >> ~/.zshrc
-    echo "export MAIL" >> ~/.zshrc
+    echo "MAIL_42="$USER_42@student.42seoul.kr"" >> ~/.zshrc
+    echo "export MAIL_42" >> ~/.zshrc
 fi
 
 mkdir -p ~/.vim/plugin
